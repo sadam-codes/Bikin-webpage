@@ -1,0 +1,110 @@
+/* Feature Heading Section */
+.feature-section {
+  text-align: center;
+  padding: 50px 0px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.feature-heading {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  position: relative;
+  display: inline-block;
+}
+
+.feature-heading::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 3px;
+  background-color: #2563eb;
+  margin: 10px auto 0;
+}
+
+.feature-description {
+  font-size: 18px;
+  color: #555;
+}
+
+/* Alternating Image-Text Sections */
+.content-section {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  max-width: 1200px;
+  gap: 10px;
+}
+
+/* Image Styling */
+.content img {
+  width: 48%;
+  max-width: 400px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Text Styling */
+.text {
+  width: 48%;
+}
+
+.text h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.text p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Styling for List */
+.text ul {
+  list-style: none; /* Removes default bullets */
+  padding: 0;
+}
+
+.text ul li {
+  font-size: 16px;
+  color: #333;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* FontAwesome Icons */
+.text ul li::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f00c"; /* Checkmark icon */
+  font-weight: 900;
+  color: #2563eb;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .content {
+    flex-direction: column !important;
+    text-align: center;
+    gap: 10px;
+  }
+
+  .content img,
+  .text {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .content img,
+  .text {
+    width: 100%;
+  }
+}

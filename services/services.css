@@ -1,0 +1,88 @@
+#services {
+  background-color: rgb(13, 13, 123);
+  padding: 10px 0px;
+}
+.services {
+  max-width: 1200px;
+  margin: auto;
+}
+.maindivservices {
+  max-width: 1200px;
+  margin: auto;
+  background-color: rgb(13, 13, 123);
+  text-align: center;
+}
+.servicesHeading {
+  color: white;
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  font-size: 28px;
+}
+.servicesHeading::after {
+  content: "";
+  width: 50%;
+  height: 3px;
+  background-color: rgb(253, 252, 254);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.para {
+  text-align: center;
+  color: white !important;
+}
+.headingOne {
+  text-align: center;
+  font-size: 25px;
+}
+.cardOne {
+  border: 1px solid white;
+  border-radius: 5px;
+  background-color: white;
+  padding: 80px 10px;
+  margin: 10px;
+}
+.Cardimages {
+  width: 20%;
+}
+.mainimagediv {
+  text-align: center;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  background-color: rgb(206, 205, 205);
+}
+.mainimagediv i {
+  font-family: 20px;
+  color: #333;
+}
+.mainimagediv:hover {
+  background-color: rgb(215, 209, 209);
+}
+.paraCard {
+  text-align: center;
+}
+.fourCards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+@media (max-width: 768px) {
+  .fourCards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  @media (max-width: 425px) {
+    .fourCards {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

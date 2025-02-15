@@ -1,0 +1,79 @@
+/* FAQ Section */
+.faq-section {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+}
+.mainheadingFAQ{
+    text-align: center;
+}
+
+/* Title */
+.faq-title {
+    font-size: 28px;
+    margin-bottom: 20px;
+    color: #0c0c0c;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+.faq-title::after {
+    content: "";
+    width: 15%;
+    height: 3px;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    text-align: center;
+    transform: translateX(-50%);
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.faq-item {
+    padding: 10px 0;
+}
+.faq-question {
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #333;
+    padding: 10px;
+    background: none;
+    border: none;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.3s;
+}
+
+.faq-answer {
+    padding: 10px;
+    font-size: 16px;
+    color: #555;
+}
+
+summary {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+summary::after {
+    content: "▼";
+    font-size: 14px;
+    color: #333;
+    transition: transform 0.3s;
+}
+details[open] summary::after {
+    transform: rotate(180deg);
+}

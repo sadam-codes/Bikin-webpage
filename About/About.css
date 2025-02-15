@@ -1,0 +1,129 @@
+/* About Section */
+.about-container {
+  background-color: rgb(13, 13, 123);
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row; /* Side-by-side layout */
+  align-items: center;
+  gap: 40px;
+  max-width: 1000px;
+  width: 100%;
+}
+
+/* Text Section */
+.about-text {
+  flex: 1;
+  text-align: left; /* Aligns text to the left */
+}
+
+.about-text h1 {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.about-text p {
+  color: white;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.about-btn {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.about-btn:hover {
+  background-color: black;
+}
+
+/* Cards Section */
+.about-cards {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* 2 columns */
+  gap: 20px;
+}
+
+.card {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.1
+  ) !important; /* Light transparency */
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+  cursor: pointer;
+  text-align: center;
+}
+
+.card h2 {
+  font-size: 20px;
+  color: white;
+  margin-bottom: 10px;
+}
+
+.card p {
+  color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about-content {
+    flex-direction: column; /* Stack items */
+    text-align: center;
+  }
+
+  .about-text {
+    text-align: center;
+  }
+
+  .about-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Logos Section */
+.logos-container {
+  display: flex;
+  flex-wrap: wrap; /* Ensures wrapping on small screens */
+  gap: 80px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 100%; /* Adjust to prevent overflow */
+}
+
+.logos-container img {
+  width: 100px; /* Adjusted size */
+  max-width: 100%; /* Makes it responsive */
+  height: auto; /* Maintains aspect ratio */
+  object-fit: contain;
+  margin: 0px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .logos-container img {
+    width: 80px; /* Slightly smaller for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .logos-container img {
+    width: 60px; /* Smaller for mobile screens */
+  }
+}

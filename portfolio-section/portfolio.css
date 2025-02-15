@@ -1,0 +1,75 @@
+#portfolio {
+  padding: 10px 0px;
+}
+.portfolio {
+  max-width: 1200px;
+  margin: auto;
+}
+.maindivPortfoilio {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+.portfolio-heading {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  font-size: 28px;
+}
+.portfolio-heading::after {
+  content: "";
+  width: 50%;
+  height: 3px;
+  background-color: rgb(123, 55, 190);
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.portfolio-para {
+  text-align: center;
+}
+.allbuttton {
+  background-color: blue;
+  border-radius: 3px;
+  border: 1px solid blue;
+  padding: 5px 12px;
+  color: white;
+}
+.buttons {
+  text-align: center;
+}
+.furtherButtons {
+  background-color: white;
+  border-radius: 3px;
+  border: 1px solid white;
+  padding: 5px 12px;
+}
+.nineImagesMain {
+  padding: 20px 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+.Nineimage {
+  width: 100%;
+  border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+  .nineImagesMain {
+    padding: 10px 5px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+@media (max-width: 425px) {
+  .nineImagesMain {
+    padding: 10px 5px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+}

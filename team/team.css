@@ -1,0 +1,81 @@
+#team {
+  padding: 10px 0px;
+}
+.team {
+  max-width: 1200px;
+  margin: auto;
+}
+.maindivteam {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+}
+.teamHeading {
+  text-align: center;
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+  font-size: 28px;
+}
+.teamHeading::after {
+  content: "";
+  width: 50%;
+  height: 3px;
+  background-color: black; /* Ensure visibility */
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block; /* Ensures the element is visible */
+}
+
+.para {
+  text-align: center;
+  color: black;
+}
+.headingOne {
+  text-align: center;
+  font-size: 25px;
+}
+
+.mainimagediv {
+  color: #333;
+  text-align: center;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.Fourimages {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin: 10px;
+}
+
+.imagesAll {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .Fourimages {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 425px) {
+  .Fourimages {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    margin: 10px;
+  }
+}

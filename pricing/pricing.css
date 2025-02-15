@@ -1,0 +1,108 @@
+#pricing {
+  background: #a3a4a6;
+    padding: 10px 0px;
+  }
+  .pricingContainer {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+  }
+  .pricingHeader {
+    max-width: 800px;
+    margin: auto;
+    color: white;
+  }
+  .pricingTitle {
+    font-size: 28px;
+    position: relative;
+    display: inline-block;
+    padding-bottom: 10px;
+  }
+  .pricingTitle::after {
+    content: "";
+    width: 50%;
+    height: 3px;
+    background-color: rgb(253, 252, 254);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .pricingDescription {
+    color: white;
+  }
+  .pricingCards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+  }
+  .pricingpara{
+    font-size: 25px;
+    font-weight: bold;
+  }
+  .pricingCard {
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    padding: 20px 10px;
+    margin: 10px;
+    text-align: center;
+  }
+  .pricingCardBlue{
+    background-color: blue;
+    border: 1px solid blue;
+    color: white !important;
+    
+  }
+  .pricingIcon {
+    text-align: center;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    background-color: rgb(206, 205, 205);
+  }
+  .pricingIcon i {
+    font-size: 24px;
+    color: #333;
+  }
+  .pricingIcon:hover {
+    background-color: rgb(215, 209, 209);
+  }
+  .pricingPlan {
+    font-size: 25px;
+    margin-top: 10px;
+  }
+  .pricingDetails {
+    font-size: 16px;
+    color: gray;
+  }
+  .pricingAmount {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  .buttonBuyNow{
+    background-color: rgb(187, 183, 183);
+    color: rgb(103, 103, 175);
+    border: 1px solid rgb(187, 183, 183);;
+    border-radius: 3px;
+    padding: 5px 15px;
+  }
+  .butttonMain{
+    padding: 10px 0px;
+  }
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .pricingCards {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  @media (max-width: 426px) {
+    .pricingCards {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }  

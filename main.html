@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bikin</title>
+  </head>
+  <body>
+    <div id="navbar"></div>
+    <div id="header"></div>
+    <div id="about"></div>
+    <div id="mainfeatureDiv"></div>
+    <div id="cards"></div>
+    <div id="services"></div>
+    <div id="portfolio"></div>
+    <div id="testimonial"></div>
+    <div id="team"></div>
+    <div id="pricing"></div>
+    <div id="faq"></div>
+
+    <script>
+      fetch("./Navbar/index.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("navbar").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading content:", error));
+
+      // Load Header Page Content
+      fetch("./Header/Header.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("header").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading content:", error));
+
+      // Load About Content
+      fetch("./About/About.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("about").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading content:", error));
+
+      // Load feature Content
+      fetch("./feature-section/feature.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("mainfeatureDiv").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading content:", error));
+
+      // Load cards Content
+      fetch("./cards/cards.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("cards").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading content:", error));
+
+      // Load services Content
+      fetch("./services/services.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("services").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading content:", error));
+
+      // Load portfolio Content
+      fetch("./portfolio-section/portfolio.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("portfolio").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading content:", error));
+
+      // Load  testimonial-section Content
+      fetch("./testimonial-section/testimonial.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("testimonial").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading content:", error));
+
+      // Load  testimonial-section Content
+      fetch("./team/team.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("team").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading content:", error));
+
+      // Load  testimonial-section Content
+      fetch("./pricing/pricing.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("pricing").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading content:", error));
+
+      // Load  FAQ-section Content
+      fetch("./faq/faq.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("faq").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading content:", error));
+    </script>
+  </body>
+</html>
