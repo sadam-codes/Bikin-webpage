@@ -4,6 +4,7 @@
   padding: 50px 0px;
   max-width: 1200px;
   margin: auto;
+  padding: 0px 10px;
 }
 
 .feature-heading {
@@ -26,6 +27,8 @@
 .feature-description {
   font-size: 18px;
   color: #555;
+  padding: 0px 10px;
+
 }
 
 /* Alternating Image-Text Sections */
@@ -94,11 +97,13 @@
     flex-direction: column !important;
     text-align: center;
     gap: 10px;
+    padding: 0px 10px;
   }
 
   .content img,
   .text {
     width: 80%;
+    padding: 10px 5px;
   }
 }
 
@@ -106,5 +111,7 @@
   .content img,
   .text {
     width: 100%;
+    padding: 10px 5px;
+
   }
 }
