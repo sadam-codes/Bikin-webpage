@@ -45,6 +45,7 @@
   border-radius: 3px;
   border: 1px solid white;
   padding: 5px 12px;
+  color: black !important;
 }
 .nineImagesMain {
   padding: 20px 10px;
@@ -65,7 +66,7 @@
     gap: 10px;
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .nineImagesMain {
     padding: 10px 5px;
     display: grid;

@@ -80,7 +80,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
   }
-  @media (max-width: 425px) {
+  @media (max-width: 426px) {
     .fourCards {
       display: grid;
       grid-template-columns: repeat(1, 1fr);

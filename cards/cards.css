@@ -54,7 +54,7 @@
     grid-template-columns: repeat(2, 1fr); /* 1 per row on mobile */
   }
 }
-@media (max-width: 425px) {
+@media (max-width: 426px) {
   .feature-container {
     grid-template-columns: repeat(1, 1fr); /* 1 per row on mobile */
   }

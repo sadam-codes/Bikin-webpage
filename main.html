@@ -17,6 +17,8 @@
     <div id="team"></div>
     <div id="pricing"></div>
     <div id="faq"></div>
+    <div id="contact"></div>
+
 
     <script>
       fetch("./Navbar/index.html")
@@ -103,6 +105,14 @@
         .then((response) => response.text())
         .then((data) => {
           document.getElementById("faq").innerHTML = data;
+        })
+        .catch((error) => console.error("Error loading content:", error));
+
+          // Load  contact-section Content
+      fetch("./contact/contact.html")
+        .then((response) => response.text())
+        .then((data) => {
+          document.getElementById("contact").innerHTML = data;
         })
         .catch((error) => console.error("Error loading content:", error));
     </script>
