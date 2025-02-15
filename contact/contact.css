@@ -152,7 +152,8 @@ i {
   .leftMAIN,
   .rightMAIN {
     max-width: 100%;
-    width: 100%;
+    width: 90%;
+    text-align: center;
   }
 
   /* Left side: Address & Email in one row, Call in the second row */
