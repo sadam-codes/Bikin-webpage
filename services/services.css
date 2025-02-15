@@ -30,9 +30,10 @@
   left: 50%;
   transform: translateX(-50%);
 }
-.para {
+.paraservices {
   text-align: center;
   color: white !important;
+  padding: 0px 5px;
 }
 .headingOne {
   text-align: center;
