@@ -1,61 +1,47 @@
-/* Center the section */
 .feature-section {
   width: 100%;
   max-width: 1200px;
   margin: auto;
   padding: 40px 0px;
 }
-
-/* Two-row, three-column layout */
 .feature-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 5px;
 }
-
-/* Card styling */
 .feature-card {
   background: #ffffff;
   border-radius: 5px;
   padding: 20px;
   text-align: left;
 }
-
-/* Number Styling */
 .feature-number {
   font-size: 30px;
   color: #7294e0;
   font-weight: bold;
 }
-
-/* Heading Styling */
 .feature-headings {
   font-size: 22px;
   color: #333;
   margin-top: 10px;
 }
-
-/* Paragraph Styling */
 .feature-text {
   font-size: 16px;
   color: #555;
   margin-top: 10px;
 }
-
-/* Responsive Design */
 @media (max-width: 1024px) {
   .feature-container {
-    grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+    grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (max-width: 768px) {
   .feature-container {
-    grid-template-columns: repeat(2, 1fr); /* 1 per row on mobile */
-  }
+    grid-template-columns: repeat(2, 1fr);
+  } 
 }
 @media (max-width: 426px) {
   .feature-container {
-    grid-template-columns: repeat(1, 1fr); /* 1 per row on mobile */
+    grid-template-columns: repeat(1, 1fr);
   }
 }

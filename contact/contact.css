@@ -1,4 +1,3 @@
-/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -10,20 +9,16 @@ body {
   background: #f8fafc;
   padding: 10px 5px;
 }
-
-/* Contact Container */
 .contactContainer {
   text-align: center;
   padding: 20px;
 }
-
 .contactTitle {
   font-size: 2rem;
   position: relative;
   display: inline-block;
   padding-bottom: 5px;
 }
-
 .contactTitle::after {
   content: "";
   width: 50%;
@@ -35,13 +30,10 @@ body {
   transform: translateX(-50%);
   display: block;
 }
-
 .contactDesc {
   font-size: 1rem;
   color: #555;
 }
-
-/* Layout */
 .fourpart {
   display: flex;
   justify-content: space-between;
@@ -51,14 +43,11 @@ body {
   gap: 20px;
   flex-wrap: wrap;
 }
-
-/* Left Side */
 .leftMAIN {
   flex: 1;
   min-width: 300px;
   max-width: 48%;
 }
-
 .address,
 .email,
 .call {
@@ -69,21 +58,17 @@ body {
   text-align: center;
   margin-bottom: 15px;
 }
-
 .contactRow {
   display: flex;
   justify-content: space-between;
   gap: 10px;
   flex-wrap: wrap;
 }
-
 .email,
 .call {
   flex: 1;
   min-width: 140px;
 }
-
-/* Right Side */
 .rightMAIN {
   flex: 1;
   min-width: 300px;
@@ -92,19 +77,16 @@ body {
   padding: 20px;
   border-radius: 5px;
 }
-
 form {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
-
 .row {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
 }
-
 input{
   width: 100%;
   padding: 12px;
@@ -132,21 +114,14 @@ textarea {
   justify-content: center;
   align-items: center;
 }
-
 .sendButtonchild:hover {
   background: #1d4ed8;
 }
-
-/* Icons */
 i {
   font-size: 20px;
   margin-bottom: 10px;
   color: #2563eb;
 }
-
-/* Responsive Fixes */
-
-/* Adjust layout for tablets (max-width: 768px) */
 @media (max-width: 768px) {
   .fourpart {
     flex-direction: column;
@@ -154,45 +129,35 @@ i {
     text-align: center;
     max-width: 100%;
   }
-
   .leftMAIN,
   .rightMAIN {
     max-width: 100%;
     width: 90%;
     text-align: center;
   }
-
-  /* Left side: Address & Email in one row, Call in the second row */
   .contactRow {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
   }
-
-
   .email,
   .address {
     flex: 1;
     min-width: 45%;
   }
-
   .call {
     width: 100%;
   }
-
-  /* Right side: Name & Email in one row, Subject in the second row */
   .row {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
   }
-
   .row input {
     flex: 1;
   }
-
   input,
   textarea {
     width: 100%;
@@ -202,8 +167,6 @@ i {
     font-size: 1rem;
   }
 }
-
-/* Adjust layout for smaller screens (max-width: 524px) */
 @media (max-width: 426px) {
   .contactRow {
     flex-direction: column;
@@ -215,8 +178,6 @@ i {
     width: 80%;
     padding: 10px 2px;
   }
-
-  /* Right Side: All in separate rows */
   .row {
     flex-direction: column;
   }
@@ -228,17 +189,13 @@ i {
     width: 100%;
   }
 }
-
-/* Extra Small Screens (max-width: 345px) */
 @media (max-width: 325px) {
   .contactTitle {
     font-size: 1.5rem;
   }
-
   .contactDesc {
     font-size: 0.8rem;
   }
-
   input,
   textarea {
     font-size: 0.85rem;
@@ -251,14 +208,12 @@ i {
     font-size: 0.85rem;
     padding: 8px;
   }
-
   .address,
   .email,
   .call {
     padding: 10px 2px;
     width: 100%;
   }
-
   .fourpart {
     flex-direction: column;
     gap: 10px;

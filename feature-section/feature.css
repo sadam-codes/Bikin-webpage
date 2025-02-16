@@ -1,4 +1,3 @@
-/* Feature Heading Section */
 .feature-section {
   text-align: center;
   padding: 50px 0px;
@@ -6,7 +5,6 @@
   margin: auto;
   padding: 0px 10px;
 }
-
 .feature-heading {
   font-size: 32px;
   font-weight: bold;
@@ -14,7 +12,6 @@
   position: relative;
   display: inline-block;
 }
-
 .feature-heading::after {
   content: "";
   display: block;
@@ -23,20 +20,15 @@
   background-color: #2563eb;
   margin: 10px auto 0;
 }
-
 .feature-description {
   font-size: 18px;
   color: #555;
   padding: 0px 10px;
-
 }
-
-/* Alternating Image-Text Sections */
 .content-section {
   display: flex;
   justify-content: center;
 }
-
 .content {
   display: flex;
   align-items: center;
@@ -45,20 +37,15 @@
   max-width: 1200px;
   gap: 10px;
 }
-
-/* Image Styling */
 .content img {
   width: 48%;
   max-width: 400px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-
-/* Text Styling */
 .text {
   width: 48%;
 }
-
 .text h3 {
   font-size: 24px;
   margin-bottom: 10px;
@@ -68,10 +55,8 @@
   font-size: 16px;
   color: #555;
 }
-
-/* Styling for List */
 .text ul {
-  list-style: none; /* Removes default bullets */
+  list-style: none;
   padding: 0;
 }
 
@@ -82,16 +67,13 @@
   align-items: center;
   gap: 10px;
 }
-
-/* FontAwesome Icons */
 .text ul li::before {
   font-family: "Font Awesome 5 Free";
-  content: "\f00c"; /* Checkmark icon */
+  content: "\f00c";
   font-weight: 900;
   color: #2563eb;
 }
 
-/* Responsive Design */
 @media (max-width: 1024px) {
   .content {
     flex-direction: column !important;
@@ -106,12 +88,10 @@
     padding: 10px 5px;
   }
 }
-
 @media (max-width: 768px) {
   .content img,
   .text {
     width: 100%;
     padding: 10px 5px;
-
   }
 }
