@@ -22,12 +22,12 @@
   content: "";
   width: 50%;
   height: 3px;
-  background-color: black; /* Ensure visibility */
+  background-color: black; 
   position: absolute;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  display: block; /* Ensures the element is visible */
+  display: block;
 }
 
 .parateam {
